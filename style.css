@@ -1,0 +1,332 @@
+
+body {
+    margin: 0;
+    padding-bottom: 0%;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  /*@media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }*/
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 300px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  .menu li:hover{
+      display: black;
+      background-color: black;
+  }
+img.logo{
+    width: 10%;
+    display: flex;
+}
+.logo:hover{
+    width: 9%;
+}
+
+.menu li:hover{
+    color: white;
+    display: inline-block;
+    background: black;
+}
+.main{
+    padding-top: 10%;
+}
+#section1{
+    display:flex;
+    height: 420px;
+    width: 100%;
+    padding-bottom: 0%;
+}
+.part1{
+    width: 50%;
+}
+.h1{
+    display: flex;
+    font-size: 5vw;
+    color: darkorange;
+    
+}
+.part2{
+    width: 50%;
+}
+.cover{
+    display: flex;
+     height: 400px;
+    width: 100%;
+}
+.cover:hover{
+    width:99%;
+    height: 399px;
+}
+#section5{
+    background-color: black ;
+    color: white;
+    border-radius: 10px;
+    padding: 0%;
+        }
+.subfooter{
+    text-align: center;
+}
+.scroll{
+    text-align: right;
+    
+
+}
+.scroll1{
+    color: white;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 1000px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+.icon{
+    display: block;
+}
+
+.card-container{
+  text-align: center;
+}
+#recipe-image{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("culcutta.jpg");
+ }
+.banana{
+  height: 40vw;
+  padding-bottom: 2px;
+  border-radius: 50px;
+  height: 30vw;
+  padding-left: 1px;
+  padding-top: 0%;
+ 
+}
+.banana:hover{
+height: 32%;
+width: 32%;
+  }
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: steelblue;
+}
+
+#recipe-image1{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("bhindi.jpg");
+  color: red;
+ }
+ #recipe-image2{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("curry.jpg");
+  color: red;
+ }
+ #recipe-image3{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("gulab.jpg");
+  color: red;
+ }
+ #recipe-image4{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("common-food.jpg");
+  color: red;
+ }
+ #recipe-image5{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("idly.jpeg");
+  color: red;
+ }
+ #recipe-image6{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("Samosa-chat.jpg");
+  color: red;
+ }
+ #recipe-image7{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("banana.png");
+  color: red;
+ }
+ #recipe-image8{
+  text-align: centre;
+  padding-bottom: 0%;
+  background-image: url("panipuri.jpg");
+  color: red;
+ }
